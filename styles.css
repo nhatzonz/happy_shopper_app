@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+h1 {
+    color: #333;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #242424;
+    box-shadow: 0px 4px 15px 0px #0000001A;
+    z-index: 1000;
+    height: 60px;
+    padding: 10px 46px 10px 46px;
+}
+.header__list {
+    height: 100%;
+    display: flex;
+    padding-left: 0;
+    gap: 36px;
+    margin: 0 6px;
+    list-style: none;
+    justify-content: flex-start;
+    align-items: center;
+    min-width: 38%;
+}
+.header__item {
+    height: 100%;
+    font-size: 1.2vw;
+    font-style: normal;
+    line-height: 150%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.header__item:hover {
+    transform: scale(1.2);
+}
+
+.content {
+    width: 100%;
+    background-color: #fff;
+    padding: 80px 20px 0 20px;
+
+}
+
+.content__main {
+    display: flex;
+    justify-content: center;
+}
+
+.text__main {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.form__select {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.form__select--list {
+    padding: 10px;
+    margin: 0 40px;
+    font-size: 16px;
+}
+
+.select__list {
+    padding: 10px 20px;
+    border-radius: 6px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.input__name {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.checkbox-group label, .select-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.button {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+.btn-submit {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    margin-right: 46px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.qr__code{
+    display: flex;
+    justify-content: center;
+}
+
+.content__staff {
+
+
+}
+
+.content__feedback{
+    /* display: none; */
+}
+
+#table-header td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    font-weight: 500;
+}
+
+.table__body td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    font-weight: 500;
+}

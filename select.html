@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chọn Nhân Viên và Dịch Vụ</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div >    
+        <div class="header">
+            <ul class="header__list">
+                <li class="header__item js__main-btn">Trang chủ</li>
+                <li class="header__item js__feedback-btn">Đánh giá</li>
+                <li class="header__item js__staff-btn">Nhân viên</li>
+                <li class="header__item js__service-btn">Dịch vụ</li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="content__main">
+                <div class="main__body">
+                    <h1 class="text__main">Đánh Giá Dịch Vụ</h1>
+                    <div class="form__select">
+                        <div class="form__select--list">
+                            <label for="staff-select"  >Nhân viên:</label>
+                            <select id="staff-select" class="select__list">
+                                <option value="">--Chọn nhân viên--</option>
+                                
+                            </select>
+                        </div>
+                        <div class="form__select--list">
+                            <label for="service-select">Dịch vụ:</label>
+                            <select id="service-select" class="select__list">
+                                <option value="">--Chọn dịch vụ--</option>
+                                
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="input__name form__select--list">
+                        <label for="customer-name">Tên khách hàng:</label>
+                        <input type="text" id="customer-name" class="select__list" placeholder="Nhập tên khách hàng">
+                    </div>
+            
+                    <div class="button"> 
+                        <button class="btn-submit" id="submit-btn" >Hoàn tất</button>
+                    </div>
+                    <div id="qr-code" class="qr__code"></div>
+                </div>
+            </div>    
+
+
+
+            <div class="content__staff hidden">
+                <table class="table-staff">
+                    <h1>Danh sách nhân viên </h1>
+                    <thead id="table-header">
+                        <tr>
+                            <td>ID</td>
+                            <td>code</td>
+                            <td>name</td>
+                            <td>email</td>
+                            <td>phone</td>
+                            <td>position</td>
+                        </tr>
+                    </thead>
+                    <tbody id="staff-body" class="table__body">
+                        
+                    </tbody>
+                </table>
+            </div>
+    
+            <div class="content__feedback hidden">
+                <table class="table-staff">
+                    <h1>Danh sách feedback</h1>
+                    <thead id="table-header">
+                        <tr>
+                            <td>serviceId</td>
+                            <td>staffCode</td>
+                            <td>customerName</td>
+                            <td>ratingService</td>
+                            <td>ratingSpace</td>
+                            <td>comment</td>
+                        </tr>
+                    </thead>
+                    <tbody id="feedback-body" class="table__body">
+                        
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="content__service hidden">
+                <table class="table-staff">
+                    <h1>Danh sách service</h1>
+                    <thead id="table-header">
+                        <tr>
+                            <td>serviceId</td>
+                            <td>nameService</td>
+                            <td>description</td>
+                        </tr>
+                    </thead>
+                    <tbody id="service-body" class="table__body">
+                        
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+    
+    </div>
+<body>
+    <script src="index.js"></script>
+</body>
+</html>
